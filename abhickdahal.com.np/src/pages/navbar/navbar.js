@@ -12,13 +12,13 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/create" className="li-tag">
-            |Create New Post|
+          <Link to="/articlelist" className="li-tag">
+            |Blogs||
           </Link>
         </li>
         <li>
-          <Link to="/articlelist" className="li-tag">
-            |Blogs||
+          <Link to="/create" className="li-tag">
+            |Create New Post|
           </Link>
         </li>
       </ul>
