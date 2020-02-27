@@ -6,7 +6,7 @@ import bodyRoutes from './src/routes/bodycontentRoutes';
 import path from 'path';
 
 const app = express();
-var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 8080;
 const cors = require('cors');
 app.use(cors());
 app.options('*', cors());
