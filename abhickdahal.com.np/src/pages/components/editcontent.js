@@ -17,7 +17,7 @@ export default class editcontent extends Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:5000/content/' + this.props.match.params._id)
+      .get('http://localhost:8080/content/' + this.props.match.params._id)
       .then(res => {
         this.setState({
           name: res.data.name,
@@ -52,7 +52,7 @@ export default class editcontent extends Component {
       content: this.state.content
     };
     axios
-      .put('http://localhost:5000/content/' + this.props.match.params._id, info)
+      .put('http://localhost:8080/content/' + this.props.match.params._id, info)
       .then(res => console.log(res.data));
 
     this.props.history.push('/articlelist');

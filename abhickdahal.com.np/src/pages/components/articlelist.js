@@ -10,7 +10,7 @@ export class Articlelist extends Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:5000/content')
+      .get('http://localhost:8080/content')
       .then(res => {
         this.setState({ content: res.data });
       })

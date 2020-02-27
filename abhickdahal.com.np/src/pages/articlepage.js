@@ -10,7 +10,7 @@ export class Articlepage extends Component {
     this.delete = this.delete.bind(this);
   }
   componentDidMount() {
-    Axios.get('http://localhost:5000/content/' + this.props.match.params._id)
+    Axios.get('http://localhost:8080/content/' + this.props.match.params._id)
       .then(res => {
         this.setState({
           name: res.data.name,
@@ -23,7 +23,7 @@ export class Articlepage extends Component {
       });
   }
   delete() {
-    Axios.delete('http://localhost:5000/content/' + this.props.match.params._id)
+    Axios.delete('http://localhost:8080/content/' + this.props.match.params._id)
       .then(console.log('Deleted'))
       .catch(err => console.log(err));
   }

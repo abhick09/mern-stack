@@ -40,7 +40,7 @@ export default class createContent extends Component {
       content: this.state.content
     };
     axios
-      .post('http://localhost:5000/content', obj)
+      .post('http://localhost:8080/content', obj)
       .then(res => console.log(res.data));
 
     this.setState({
