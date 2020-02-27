@@ -55,7 +55,7 @@ export default class editcontent extends Component {
       .put('http://localhost:5000/content/' + this.props.match.params._id, info)
       .then(res => console.log(res.data));
 
-    this.props.history.push('/');
+    this.props.history.push('/articlelist');
   }
   render() {
     return (

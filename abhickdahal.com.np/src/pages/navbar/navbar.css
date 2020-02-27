@@ -76,6 +76,7 @@ a:-webkit-any-link {
   max-width: 900px;
   margin: auto;
   text-align: center;
+  height: 100%;
 }
 
 .homepage:hover {

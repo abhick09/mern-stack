@@ -48,6 +48,7 @@ export default class createContent extends Component {
       title: '',
       content: ''
     });
+    this.props.history.push('/articlelist');
   }
 
   render() {
@@ -82,8 +83,14 @@ export default class createContent extends Component {
               onChange={this.onChangecontent}
             />
           </div>
+
           <div className="form-group">
-            <input type="submit" value="Submit" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="Submit"
+              className="btn btn-primary"
+              action="articlelist.js"
+            />
           </div>
         </form>
       </div>
