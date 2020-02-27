@@ -16,11 +16,7 @@ export const Navbar = () => {
             |Blogs||
           </Link>
         </li>
-        <li>
-          <Link to="/create" className="li-tag">
-            |Create New Post|
-          </Link>
-        </li>
+        <li></li>
       </ul>
     </nav>
   );

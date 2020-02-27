@@ -48,6 +48,9 @@ export class Articlepage extends Component {
             >
               Edit Content
             </Link>
+            <Link to="/create">
+              <button className="btn btn-dark">Create Content</button>
+            </Link>
           </div>
         )}
       </>
