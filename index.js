@@ -49,4 +49,6 @@ app.use(express.static('public/images'));
 
 app.get('/', (req, res) => res.send(`Node is running on ${PORT}`));
 
-app.listen(PORT, () => console.log(`Your server is running on ${PORT}`));
+app.listen(process.env.PORT || 5000, () =>
+  console.log(`Your server is running on ${PORT}`)
+);
