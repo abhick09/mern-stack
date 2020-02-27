@@ -6,7 +6,7 @@ import bodyRoutes from './src/routes/bodycontentRoutes';
 import path from 'path';
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 5000;
 const cors = require('cors');
 app.use(cors());
 app.options('*', cors());
@@ -49,6 +49,4 @@ app.use(express.static('public/images'));
 
 app.get('/', (req, res) => res.send(`Node is running on ${PORT}`));
 
-app.listen(process.env.PORT || 5000, () =>
-  console.log(`Your server is running on ${PORT}`)
-);
+app.listen(PORT, () => console.log(`Your server is running on ${PORT}`));
